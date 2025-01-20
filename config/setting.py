@@ -15,3 +15,5 @@ print(PROJECT_ROOT)
 FILE_PATH = {
     'log': os.path.join(PROJECT_ROOT, 'logs')
 }
+
+print(FILE_PATH['log'])
