@@ -25,7 +25,8 @@ finally:
 # if not os.path.exists(log_path):
 #     os.makedirs(log_path)
 
-logfile_name = log_path + r'/{}.log'.format(time.strftime("%Y%m%d-%H%M%s"))
+logfile_name = log_path + r'/{}.log'.format(time.strftime("%Y%m%d"))
+# logfile_name = log_path + r'/{}.log'.format(time.strftime("%Y%m%d%H%M%S"))
 
 
 class MyLogger(object):
@@ -82,7 +83,4 @@ class MyLogger(object):
 
 
 logger = MyLogger()
-logger.info('info')
-logger.warning('warn')
-logger.error('error')
-logger.debug('debug')
+
