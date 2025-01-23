@@ -10,3 +10,4 @@ logs/*
 .venv
 tcip_mgr_lib/logs/*
 downloads/*
+testcases/result/*

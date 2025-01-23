@@ -33,7 +33,7 @@ class TestCase03():
 if __name__ == '__main__':
     # pytest.main(['-vs', '--alluredir=./result/tmp', __file__])
     pytest.main(['-s', __file__])
-    shutil.copy('../environment.xml','./result/tmp')
-    # pytest.main(['-vs', '--alluredir=./result/tmp', '--clean-alluredir', __file__])
+    # shutil.copy('../environment.xml','./result/tmp')
+    pytest.main(['-vs', '--alluredir=./result/tmp', '--clean-alluredir', __file__])
     os.system('allure serve  ./result/tmp')
     # pytest.main(['-vs', __file__])
