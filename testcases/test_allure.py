@@ -29,11 +29,21 @@ class TestCase03():
     def test_case6(self):
         print('case...')
 
+    def test_case7(self):
+        print('case7...')
+
 
 if __name__ == '__main__':
     # pytest.main(['-vs', '--alluredir=./result/tmp', __file__])
-    pytest.main(['-s', __file__])
-    # shutil.copy('../environment.xml','./result/tmp')
     pytest.main(['-vs', '--alluredir=./result/tmp', '--clean-alluredir', __file__])
+
+    # pytest.main(['-s', __file__])
+    shutil.copy('../environment.xml', './result/tmp')
+    pytest.main(['-vs', '--alluredir=./result/tmp', __file__])
+    # pytest.main(['-vs', '--alluredir=./result/tmp', '--clean-alluredir', __file__])
+
+    # 离线报告
+    os.system('allure generate  ./result/tmp -o ./result/offline --clean')
+
+    # 在线报告
     os.system('allure serve  ./result/tmp')
-    # pytest.main(['-vs', __file__])
