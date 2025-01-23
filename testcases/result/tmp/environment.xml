@@ -1,0 +1,10 @@
+<environment>
+    <parameter>
+        <key>Brower</key>
+        <value>Chrome</value>
+    </parameter>
+    <parameter>
+        <key>System</key>
+        <value>MAC</value>
+    </parameter>
+</environment>
