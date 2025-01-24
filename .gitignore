@@ -11,3 +11,5 @@ logs/*
 tcip_mgr_lib/logs/*
 downloads/*
 testcases/result/*
+allure_reports/allure_report/*
+allure_reports/allure_xml/*
