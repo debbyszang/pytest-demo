@@ -58,7 +58,7 @@ class TestCase03():
 
 # 需要执行的测试脚本的路径
 test_path = "./test_allure_trend.py"
-# 需要生成的xml的路径起来干啥呢？小弟弟你还害羞是吧？五角星巴掌，快到这儿打字打字卡到我啦，告诉你怎么回事你搞成啥了？你在做什么？
+# 需要生成的xml的路径起
 allure_xml_path = "../allure_reports/allure_xml/"
 # 需要生成测试报告的路径
 allure_path = "../allure_reports/allure_report"
